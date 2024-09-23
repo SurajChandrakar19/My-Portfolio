@@ -158,7 +158,6 @@ a{
 
 .hero-section-right{
     position: relative;
-
 }
 
 .absolute{
@@ -761,15 +760,24 @@ a{
         text-align: center; /* Center text */
     }
 
+    .hero-section-left .btn-pink{
+        margin-left: 35%;
+    }
+
+    .hero-section-right{
+        width: 100dvw;
+    
+    }
+
     .faded-text{
-        font-size: 4em;
-        bottom: -5%;
+        font-size: 3em;
+        bottom: -4%;
     }
 
     .skills-fade-text{
         font-size: 5rem;
-        bottom: -23.5%;
-        right: -5%;
+        bottom: -16%;
+        right: -6%;
     }
     
 
@@ -811,7 +819,7 @@ a{
 
     .skills-container {
         flex-direction: column; /* Stack skill items */
-        padding: 3rem 1rem; /* Adjust padding */
+        padding: 0rem 0rem; /* Adjust padding */
     }
 
     .skills-container-left,
@@ -824,11 +832,12 @@ a{
     }
 
     .contact-me-section {
-        padding: 3rem 1rem; /* Adjust padding */
+        padding:3rem 1rem; /* Adjust padding */
     }
 
     .contact-me-content {
         width: 100%; /* Full width */
+        padding: 0rem;
     }
 
     .contanct-me-form {
@@ -855,7 +864,7 @@ a{
     }
     
     .project-card>.scresorts>img{
-        height: 8.8rem;
+        height: 4.8rem;
     }
 
     .footer-left, .footer-right {
