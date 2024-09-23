@@ -339,10 +339,12 @@ a{
 .project-card>.scresorts{
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .project-card>.scresorts>img{
-    height: 17rem;
+    height: 16.8rem;
 }
 
 #projects2>video{
@@ -730,4 +732,133 @@ a{
 
 .footer-left div:hover a{
     color: var(--bgOrange);
+}
+
+@media (max-width: 768px) {
+    /* General adjustments for smaller screens */
+    .container {
+        width: 95%; /* Make container full-width */
+        padding: 0 1rem; /* Add some padding */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        padding: 1rem 0; /* Adjust padding */
+    }
+
+    .nav-items {
+        flex-direction: row; /* Stack nav items */
+        gap: 1rem; /* Reduce gap */
+        padding: 0; /* Remove side padding */
+    }
+
+    .hero-section {
+        flex-direction: column; /* Stack content vertically */
+        margin: 2rem auto; /* Adjust margin */
+    }
+
+    .hero-section-left {
+        text-align: center; /* Center text */
+    }
+
+    .faded-text{
+        font-size: 4em;
+        bottom: -5%;
+    }
+
+    .skills-fade-text{
+        font-size: 5rem;
+        bottom: -23.5%;
+        right: -5%;
+    }
+    
+
+    .hero-section-lft-heading,
+    .hero-section-lft-sub-heading {
+        font-size: 28px; /* Adjust heading sizes */
+    }
+
+    .hero-section-lft-description {
+        width: 100%; /* Full width for description */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .btn-pink {
+        padding: 0.5rem 1.5rem; /* Adjust button padding */
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .project-section {
+        margin-top: 2rem; /* Reduce margin */
+    }
+
+    .page-header {
+        font-size: 40px; /* Adjust header size */
+    }
+
+    .project-card {
+        height: 300px; /* Adjust card height */
+        margin: 1rem 0; /* Add vertical spacing between cards */
+    }
+
+    .project-heading {
+        font-size: 30px; /* Adjust heading size */
+    }
+
+    .project-subHeading {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skill items */
+        padding: 3rem 1rem; /* Adjust padding */
+    }
+
+    .skills-container-left,
+    .skills-container-right {
+        width: 100%; /* Full width for both sections */
+    }
+
+    .skills-logo {
+        width: 60px; /* Adjust icon size */
+    }
+
+    .contact-me-section {
+        padding: 3rem 1rem; /* Adjust padding */
+    }
+
+    .contact-me-content {
+        width: 100%; /* Full width */
+    }
+
+    .contanct-me-form {
+        width: 100%; /* Full width for form */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer items */
+        padding: 1rem; /* Add padding */
+    }
+
+    .footer-left, .footer-right {
+        flex-direction: column; /* Stack footer sections */
+        align-items: center; /* Center align */
+        gap: 0.5rem; /* Adjust gap */
+    }
+
+    .project-card>.scresorts{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: space-between;
+    }
+    
+    .project-card>.scresorts>img{
+        height: 8.8rem;
+    }
+
+    .footer-left, .footer-right {
+        flex-direction: row;
+    }
 }
