@@ -785,7 +785,6 @@ a{
     .hero-section-lft-sub-heading {
         font-size: 28px; /* Adjust heading sizes */
     }
-
     .hero-section-lft-description {
         width: 100%; /* Full width for description */
         font-size: 16px; /* Adjust font size */
@@ -807,6 +806,10 @@ a{
     .project-card {
         height: 300px; /* Adjust card height */
         margin: 1rem 0; /* Add vertical spacing between cards */
+    }
+
+    .project-content-right{
+        right: 0%;
     }
 
     .project-heading {
@@ -864,7 +867,7 @@ a{
     }
     
     .project-card>.scresorts>img{
-        height: 4.8rem;
+        height: 8.8rem;
     }
 
     .footer-left, .footer-right {
