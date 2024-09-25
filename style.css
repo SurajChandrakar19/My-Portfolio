@@ -909,6 +909,11 @@ a{
     .footer-left, .footer-right {
         flex-direction: row;
     }
+    
+    .certificate-card{
+        width: 40%;
+        height: 200px;
+    }
 }
 
 
