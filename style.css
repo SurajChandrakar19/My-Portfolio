@@ -910,9 +910,13 @@ a{
         flex-direction: row;
     }
     
-    .certificate-card{
-        width: 40%;
-        height: 150px;
+     .certificate-card{
+        width: 85%;
+        height: 12rem;  
+    }
+
+    .certifiacte img{
+        border-radius: 10px;
     }
 }
 
