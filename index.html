@@ -1,80 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Suraj Kumar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/userAsset/My/s_logo.jpg">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <div id="wrapper">
 
         <div class="container">
-            
+
             <div class="navbar">
-                
-                <div class="logo-container">
-                    <img src="./images/userAsset/My/s_logo.jpg" width="40em" height="50rem" alt="image not found">
+
+                <div class="logo-container" onclick="window.scrollTo(0,0)">
+                    <img src="./images/userAsset/My/s_logo.jpg" class="logo-img" alt="S Logo">
                     <div class="logo-text">uraj</div>
                 </div>
 
-        `       <div class="nav-items">
+                <div class="nav-items">
+                    <div><a href="#experience">Experience</a></div>
                     <div><a href="#projects">Projects</a></div>
-                    <div><a href="#certificates">Certificate</a></div>
+                    <div><a href="#certificates">Certificates</a></div>
                     <div><a href="#skills">Skills</a></div>
                     <div><a href="#contactme">Contact Me</a></div>
                 </div>
 
-            </div>   <!-- end navbar -->
+            </div> <!-- end navbar -->
 
             <div class="hero-section">
-    
+
                 <div class="absolute faded-text">Suraj Kumar</div>
 
-                <div class="hero-section-left">
+                <div class="hero-section-left" data-aos="fade-right" data-aos-duration="1000">
                     <div class="hero-section-lft-heading">Hi! Suraj Kumar</div>
-                    
+
                     <div class="hero-section-lft-heading hero-section-lft-sub-heading">
                         I am a <span class="role"></span>
                     </div>
-    
+
                     <div class="hero-section-lft-description">
-                    I'm a software developer and here is my portfolio website. Here you'll
-                    learn about my journey as a software developer.    
+                        I'm a software developer and here is my portfolio website. Here you'll
+                        learn about my journey as a software developer.
                     </div>
-    
+
                     <div class="btn-pink" id="btn">Hire Me</div>
                 </div>
-    
-                <div class="hero-section-right">
-                    <div class="absolute icons icon-dosts">
+
+                <div class="hero-section-right" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="absolute icons icon-dots">
                         <img src="./images/userAsset/My/dots.png" width="120px" height="77" alt="">
                     </div>
-    
+
                     <div class="absolute icons icon-cube">
                         <img src="./images/userAsset/My/cube.png" width="41px" height="41px" alt="">
                     </div>
-    
+
                     <div class="absolute icons icon-circle">
                         <img src="./images/userAsset/My/circle.png" width="23px" height="22px" alt="">
                     </div>
-    
+
                     <div class="absolute icons icon-zigzag">
                         <img src="./images/userAsset/My/zigjak.png" width="90px" height="101px" alt="">
                     </div>
-    
+
                     <div class="absolute icons icon-plus">
                         <img src="./images/userAsset/My/plus.png" width="33px" height="32px" alt="">
                     </div>
-    
+
                     <div class="my-pic">
-                        <img src="./images/userAsset/My/my_pic.png" width="345px" height="345px" alt="">
+                        <img src="./images/userAsset/My/my_pic.png" alt="Suraj Kumar">
                     </div>
-    
+
                 </div>
-    
-            </div>  <!-- hero section end -->
-        </div>   <!-- end container -->
+
+            </div> <!-- hero section end -->
+        </div> <!-- end container -->
+
+        <!-- Start Work Experience Section -->
+        <div class="experience-section" id="experience">
+            <h2 class="page-header">Work Experience</h2>
+            <div class="experience-container">
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="exp-header">
+                        <div class="exp-company-logo">H</div>
+                        <div class="exp-title-group">
+                            <h3 class="exp-role">Full Stack Developer</h3>
+                            <p class="exp-company">Headsup HR Solutions</p>
+                        </div>
+                        <div class="exp-duration">8 Months</div>
+                    </div>
+                    <p class="exp-description">
+                        As a Full Stack Developer, I contributed to both frontend and backend development for various
+                        client projects. My role involved building responsive user interfaces, developing robust
+                        server-side logic, managing databases, and deploying applications to cloud services and the
+                        Google Play Store.
+                    </p>
+                    <div class="exp-tech-stack">
+                        <div class="exp-tech-item">
+                            <img src="./images/experience/flutter.svg" alt="Flutter">
+                            <span>Flutter</span>
+                        </div>
+                        <div class="exp-tech-item">
+                            <img src="./images/experience/angular.png" alt="Angular">
+                            <span>Angular</span>
+                        </div>
+                        <div class="exp-tech-item">
+                            <img src="./images/experience/spring.svg" alt="Spring Boot">
+                            <span>Spring Boot</span>
+                        </div>
+                        <div class="exp-tech-item">
+                            <img src="./images/experience/postgresql.png" alt="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="exp-tech-item">
+                            <img src="./images/experience/aws.png" alt="AWS">
+                            <span>AWS</span>
+                        </div>
+                        <div class="exp-tech-item">
+                            <img src="./images/experience/playstore.svg" alt="Play Store">
+                            <span>Play Store</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- play store sections -->
+        <section class="play-store-section" id="mobile-apps">
+            <h2 class="section-title" data-aos="fade-up">Available on Google Play</h2>
+
+            <div class="apps-container">
+                <div class="app-card" data-aos="fade-right">
+                    <div class="app-visuals">
+                        <div class="screenshot-carousel">
+                            <img src="images/playstore/ss1.png" alt="Home">
+                            <img src="images/playstore/ss2.png" alt="Candidate Tracking">
+                            <img src="images/playstore/ss3.png" alt="jobs">
+                            <img src="images/playstore/rating.png" alt="Rating">
+                        </div>
+                    </div>
+
+                    <div class="app-details">
+                        <div class="app-header">
+                            <img src="./images/playstore/icon.png" class="app-main-icon" alt="Icon">
+                            <div>
+                                <h3 class="app-title">PocketCTS</h3>
+                                <p class="app-category">Business • HR Solutions</p>
+                            </div>
+                        </div>
+
+                        <div class="play-store-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">4.9 <i class="fa-solid fa-star"></i></span>
+                                <span class="stat-label">Rating</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-value">10+</span>
+                                <span class="stat-label">Downloads</span>
+                            </div>
+                        </div>
+
+                        <p class="app-description">
+                            A professional HR solution for tracking candidates, managing interview stages (GFI), and
+                            sending automated notifications to applicants.
+                        </p>
+
+                        <div class="app-badges">
+                            <a href="https://play.google.com/store/apps/details?id=com.headsuphrsolutions.pocketcts&pcampaignid=web_share"
+                                class="google-play-btn" target="_blank" rel="noopener noreferrer">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-card" data-aos="fade-left">
+                    <div class="app-visuals">
+                        <div class="screenshot-carousel">
+                            <img src="images/playstore/tic1.jpeg" alt="Game Play">
+                            <img src="images/playstore/tic2.jpeg" alt="Winner Screen">
+                        </div>
+                    </div>
+
+                    <div class="app-details">
+                        <div class="app-header">
+                            <img src="./images/playstore/ticicon.png" class="app-main-icon" alt="Icon">
+                            <div>
+                                <h3 class="app-title">Tic Tac Toe Classic</h3>
+                                <p class="app-category">Games • Casual</p>
+                            </div>
+                        </div>
+
+                        <div class="play-store-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">3.0 <i class="fa-solid fa-star"></i></span>
+                                <span class="stat-label">Rating</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-value">10+</span>
+                                <span class="stat-label">Downloaded</span>
+                            </div>
+                        </div>
+
+                        <p class="app-description">
+                            A clean, fast-paced local multiplayer game. No login, no ads—just pure gameplay for you and
+                            your friends.
+                        </p>
+
+                        <div class="app-badges">
+                            <a href="#" class="google-play-btn">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Start Project Section -->
         <div class="project-section" id="projects">
@@ -83,191 +234,236 @@
 
             <div class="project-container">
                 <!-- this is the first project -->
-                <div class="project-card" id="projects1">
+                <div class="project-card" id="projects1" data-aos="zoom-in-up">
                     <div class="scresorts">
                         <img src="images/projects/CommiteeManagement/1.jpg" alt="">
                         <img src="images/projects/CommiteeManagement/2.jpg" alt="">
                         <img src="images/projects/CommiteeManagement/3.jpg" alt="">
                         <img src="images/projects/CommiteeManagement/4.png" alt="">
-                        <img src="images/projects/CommiteeManagement/5.png" alt="">
-                        <img src="images/projects/CommiteeManagement/6.jpg" alt="">
-                        <img src="images/projects/CommiteeManagement/7.jpg" alt="">
-                        <img src="images/projects/CommiteeManagement/8.png" alt="">
-                        <img src="images/projects/CommiteeManagement/9.jpg" alt="">
                     </div>
-                    <!-- <video autoplay muted loop id="myVideo"> -->
-                        <source src="./images/myportfolio.mp4"
-                            type="video/mp4">
-                    </video>
+
                     <div class="project-number project-number-right">01</div>
 
                     <div class="project-content project-content-left">
 
                         <div class="project-skills-container">
-                            <img src="./images/projects/android-studio.png" class="project-skill-icon" alt="image not found">
-                            <img src="./images/projects/java.png" class="project-skill-icon" alt="image not found">
-                            <img src="./images/projects/SQLite.png" class="project-skill-icon" alt="image not found">
-                            <img src="./images/projects/firbase.png" class="project-skill-icon" alt="image not found">
+                            <img src="./images/projects/android-studio.png" class="project-skill-icon"
+                                alt="Android Studio">
+                            <img src="./images/projects/java.png" class="project-skill-icon" alt="Java">
+                            <img src="./images/projects/SQLite.png" class="project-skill-icon" alt="SQLite">
+                            <img src="./images/projects/firbase.png" class="project-skill-icon" alt="Firebase">
                         </div>
 
                         <h2 class="project-heading">Committee Management</h2>
 
-                        <div class="project-subHeading">Financial statements and strict reporting requirements ensure transparency and compliance with legal and donor restrictions.
-                            <!-- Its is a car modification company
-                            which provide you sheets to protect your car from scratch -->
-                        </div>
+                        <div class="project-subHeading">Financial statements and strict reporting requirements ensure
+                            transparency and compliance with legal and donor restrictions.</div>
 
                         <div class="btn-grp">
-                            <button class="btn-pink btn-project" onclick="window.location.href='https://github.com/SurajChandrakar19/Committee_Management';">Read More</button>
-                            <a href="">
+                            <button class="btn-pink btn-project"
+                                onclick="window.location.href='https://github.com/SurajChandrakar19/Committee_Management';">Read
+                                More</button>
+                            <a href="https://github.com/SurajChandrakar19/Committee_Management" target="_blank">
                                 <i title="GitHubLink" class="fa-brands fa-github btn-icon"></i>
-                            </a>
-                            <a href="">
-                                <i title="Live Link" class="fa-solid fa-link btn-icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <!-- this is the second project -->
-                <div class="project-card project-content-right" id="projects2">
-                    <video muted autoplay loop>
-                        <!-- <video autoplay muted loop id="myVideo"> -->
-                        <source src="./images/videos/portfolio.mp4" type="video/mp4">
-                    </video>                    
-                       
+                <div class="project-card" id="projects2" data-aos="zoom-in-up">
+                    <div class="video-container">
+                        <video muted autoplay loop>
+                            <source src="./images/videos/portfolio.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
                     <div class="project-number project-number-left">02</div>
 
                     <div class="project-content project-content-right">
 
                         <div class="project-skills-container">
-                            <img src="./images/stack/HTML.png" class="project-skill-icon" alt="image not found">
-                            <img src="./images/stack/CSS.png" class="project-skill-icon" alt="image not found">
-                            <img src="./images/stack/Javascript.svg" class="project-skill-icon" alt="image not found">
+                            <img src="./images/stack/HTML.png" class="project-skill-icon" alt="HTML">
+                            <img src="./images/stack/CSS.png" class="project-skill-icon" alt="CSS">
+                            <img src="./images/stack/Javascript.svg" class="project-skill-icon" alt="JS">
                         </div>
 
                         <h2 class="project-heading">Portfolio Website</h2>
 
-                        <div class="project-subHeading">A portfolio website highlights your work, ensuring transparency and professionalism while meeting industry standards.
-                            <!-- Its is a car modification company
-                            which provide you sheets to protect your car from scratch -->
-                        </div>
+                        <div class="project-subHeading">A portfolio website highlights your work, ensuring transparency
+                            and professionalism while meeting industry standards.</div>
 
                         <div class="btn-grp">
-                            <button class="btn-pink btn-project"onclick="window.location.href='https://github.com/SurajChandrakar19/My-Portfolio';">Read More</button>
+                            <button class="btn-pink btn-project"
+                                onclick="window.location.href='https://github.com/SurajChandrakar19/My-Portfolio';">Read
+                                More</button>
+                            <a href="https://github.com/SurajChandrakar19/My-Portfolio" target="_blank">
+                                <i title="GitHubLink" class="fa-brands fa-github btn-icon"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <!-- this is the thired project -->
-                <div class="project-card" id="projects3">
-                    <video muted autoplay loop>
-                        <!-- <video autoplay muted loop id="myVideo"> -->
-                        <source src="./images/videos/quickServe.mp4" type="video/mp4">
-                    </video>                    
-                       
+                <!-- this is the third project -->
+                <div class="project-card" id="projects3" data-aos="zoom-in-up">
+                    <div class="video-container">
+                        <video muted autoplay loop>
+                            <source src="./images/videos/quickServe.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
                     <div class="project-number project-number-right">03</div>
 
                     <div class="project-content project-content-left">
 
                         <div class="project-skills-container">
-                            <img src="./images/stack/java/html.svg" class="project-skill-icon" alt="image not found">
-                            <img src="./images/stack/java/css.svg" class="project-skill-icon" alt="image not found">
-                            <img src="./images/stack/java/jsp.svg" class="project-skill-icon" alt="image not found">
-                            <img src="./images/stack/java/java.svg" class="project-skill-icon" alt="image not found">                        
-                            <img src="./images/stack/java/eclipse.svg" class="project-skill-icon" alt="image not found">
+                            <img src="./images/stack/java/html.svg" class="project-skill-icon" alt="HTML">
+                            <img src="./images/stack/java/css.svg" class="project-skill-icon" alt="CSS">
+                            <img src="./images/stack/java/jsp.svg" class="project-skill-icon" alt="JSP">
+                            <img src="./images/stack/java/java.svg" class="project-skill-icon" alt="Java">
+                            <img src="./images/stack/java/eclipse.svg" class="project-skill-icon" alt="Eclipse">
                         </div>
 
                         <h2 class="project-heading">Quick-Serve</h2>
 
-                        <div class="project-subHeading">QuickServe is a food delivery app that connects users with local restaurants for seamless dining and prioritizes transparency and professionalism.
-                            <!-- Its is a car modification company
-                            which provide you sheets to protect your car from scratch -->
-                        </div>
+                        <div class="project-subHeading">QuickServe is a food delivery app that connects users with local
+                            restaurants for seamless dining and prioritizes transparency and professionalism.</div>
 
                         <div class="btn-grp">
-                            <button class="btn-pink btn-project" onclick="window.location.href='https://github.com/SurajChandrakar19/Quick-Serve/tree/main/quick-serve';">Read More</button>
+                            <button class="btn-pink btn-project"
+                                onclick="window.location.href='https://github.com/SurajChandrakar19/Quick-Serve/tree/main/quick-serve';">Read
+                                More</button>
+                            <a href="https://github.com/SurajChandrakar19/Quick-Serve/tree/main/quick-serve"
+                                target="_blank">
+                                <i title="GitHubLink" class="fa-brands fa-github btn-icon"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> <!-- end project-section --> 
+        </div> <!-- end project-section -->
 
         <!-- Start Certificate Section -->
-        <div class="cetificates-section" id="certificates">
-            <h2 class="faded-text">Certificates</h2>
-            
-                <div class="certificate-card">
-                    <div class="certifiacte">
-                        <img src="images/stack/certificates/javaFullStack.png" alt="">
+        <div class="certificates-section" id="certificates">
+            <h2 class="page-header">Certificates</h2>
+
+            <div class="certificate-container">
+                <div class="certificate-card" data-aos="flip-left" data-aos-duration="1000">
+                    <div class="certificate-img-container">
+                        <img src="images/stack/certificates/javaFullStack.png" alt="Java Full Stack Certificate">
                     </div>
                 </div>
-                <div class="certificate-card">
-                    <div class="certifiacte">
-                        <img src="images/stack/certificates/hakathonJaipur.png" alt="">
+                <div class="certificate-card" data-aos="flip-right" data-aos-duration="1000">
+                    <div class="certificate-img-container">
+                        <img src="images/stack/certificates/hakathonJaipur.png" alt="Hackathon Certificate">
                     </div>
                 </div>
-            
+            </div>
+
         </div>
-        
+
         <div class="skills-container container" id="skills">
             <div class="skills-fade-text">Skills</div>
 
-            <div class="skills-container-left">
+            <div class="skills-container-left" data-aos="fade-right">
                 <h2 class="skills-heading">
-                    <span class="caps">j</span>a va Full
+                    <span class="caps">M</span>e and
                     <br />
                     MyTech Stack
                 </h2>
 
                 <div class="skills-subHeading">
                     <p>
-                        Hi everyone! My name is Suraj Kumar, and I am a Full Stack Java Developer with over 3 years of experience. Currently, I am working with an innovative startup in the USA while also taking on freelance projects. I specialize in building robust applications using Java and am passionate about creating seamless user experiences.
+                        Hi everyone! My name is Suraj Kumar, and I am a Full Stack Java Developer with over 3 years of
+                        experience. Currently, I am working with an innovative startup in the USA while also taking on
+                        freelance projects. I specialize in building robust applications using Java and am passionate
+                        about creating seamless user experiences.
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, quo nostrum non doloremque laboriosam perferendis rem repudiandae a at odit.
+                        I am constantly learning new technologies and improving my skills to deliver the best possible
+                        solutions for my clients.
                     </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eveniet quae necessitatibus mollitia, fuga sint repudiandae?
-                    </p>
-
                 </div>
-                
+
             </div><!-- skill-container-left -->
 
-            <div class="skills-container-right">
-                <img src="./images/userAsset/blob vector.png" class="blob-style" alt=""/>
-                
-                <img src="./images/stack/java/html.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/css.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/javascript.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/jsp.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/tailwind.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/java.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/hibernate.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/spring.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/androidStudio.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/mysql.svg" alt="" class="skills-logo" /> 
-                <img src="./images/stack/java/sqlite.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/firebase.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/Git.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/Github.svg" alt="" class="skills-logo" />
-                <img src="./images/stack/java/eclipse.svg" alt="" class="skills-logo" />
+            <div class="skills-container-right" data-aos="fade-left">
+                <!-- Skill Cards -->
+                <div class="skill-card">
+                    <img src="./images/stack/java/html.svg" alt="HTML" class="skills-logo" />
+                    <div class="skill-name">HTML</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/css.svg" alt="CSS" class="skills-logo" />
+                    <div class="skill-name">CSS</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/javascript.svg" alt="JS" class="skills-logo" />
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/jsp.svg" alt="JSP" class="skills-logo" />
+                    <div class="skill-name">JSP</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/tailwind.svg" alt="Tailwind" class="skills-logo" />
+                    <div class="skill-name">Tailwind</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/java.svg" alt="Java" class="skills-logo" />
+                    <div class="skill-name">Java</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/hibernate.svg" alt="Hibernate" class="skills-logo" />
+                    <div class="skill-name">Hibernate</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/spring.svg" alt="Spring" class="skills-logo" />
+                    <div class="skill-name">Spring</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/androidStudio.svg" alt="Android Studio" class="skills-logo" />
+                    <div class="skill-name">Android</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/mysql.svg" alt="MySQL" class="skills-logo" />
+                    <div class="skill-name">MySQL</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/sqlite.svg" alt="SQLite" class="skills-logo" />
+                    <div class="skill-name">SQLite</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/firebase.svg" alt="Firebase" class="skills-logo" />
+                    <div class="skill-name">Firebase</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/Git.svg" alt="Git" class="skills-logo" />
+                    <div class="skill-name">Git</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/Github.svg" alt="GitHub" class="skills-logo" />
+                    <div class="skill-name">GitHub</div>
+                </div>
+                <div class="skill-card">
+                    <img src="./images/stack/java/eclipse.svg" alt="Eclipse" class="skills-logo" />
+                    <div class="skill-name">Eclipse</div>
+                </div>
 
             </div> <!-- skill-container-right -->
         </div> <!-- end skill-container -->
-        
+
         <div class="contact-me-section" id="contactme">
             <div class="contact-me-content">
                 <div class="contact-me-head">
                     <div class="heading">Contact Me</div>
                     <div class="sub-heading">Questions, Thoughts, Or Just Want To Say Hello?</div>
                 </div>
-                
-                <form action="./images/projects/github.png" class="contanct-me-form">
+
+                <form action="#" class="contact-me-form">
                     <input type="text" class="input" placeholder="Enter your name">
-                    <input type="text" class="input" placeholder="Enter your email address">
+                    <input type="email" class="input" placeholder="Enter your email address">
                     <input type="text" class="input" placeholder="Enter your subject">
                     <textarea name="" class="input" id="" rows="10" placeholder="Enter your message"></textarea>
-                    <br/><button type="submit" class="btn-pink">
+                    <button type="submit" class="btn-pink">
                         Send Message
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
@@ -276,7 +472,7 @@
         </div> <!-- end contact-me-section -->
 
         <div class="footer-container">
-             
+
             <div class="absolute faded-text">Suraj Kumar</div>
 
             <div class="footer-left">
@@ -296,22 +492,28 @@
 
     </div> <!-- end wrapper -->
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-  <script>
-    var typeData = new Typed(".role", {
-      strings: [
-        "Full Stack Developer",
-        "Web Developer",
-        "UI-UX Designer",
-        "Backend Developer",
-        "Coder",
-      ],
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 80,
-      backDelay: 1000,
-    });
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        var typeData = new Typed(".role", {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "UI-UX Designer",
+                "Backend Developer",
+                "Coder",
+            ],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
 </body>
+
 </html>
